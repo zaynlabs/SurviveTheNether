@@ -9,7 +9,7 @@
 * **🌋 Crimson Forest Spawn:** You start directly inside a Crimson Forest on solid ground. The spawn finder makes sure you never spawn swimming in lava.
 * **🔁 Die in the Nether, Stay in the Nether:** You fell in fire with no anchor? Bro really thought he was getting a free ticket to the Overworld 😭. You respawn right back in the Nether.
 * **🛏️ Anchors & Beds actually work:** Charge up a Respawn Anchor to lock in your base coordinates. If you manage to escape to the Overworld and sleep in a bed, you respawn at your bed like a certified boss.
-* **🪵 Pure Vanilla Gameplay:** Zero goofy ahh custom items or complex commands. Everything is 100% vanilla Minecraft survival using what's already in the game.
+* **🪵 Pure Vanilla Gameplay:** Zero custom items or complex commands. Everything is 100% vanilla Minecraft survival using what's already in the game.
 
 ---
 
