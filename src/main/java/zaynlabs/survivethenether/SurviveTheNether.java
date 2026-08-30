@@ -17,6 +17,13 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.world.level.saveddata.SavedDataType;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.protocol.game.ClientboundSetSubtitleTextPacket;
+import net.minecraft.network.protocol.game.ClientboundSetTitleTextPacket;
+import net.minecraft.network.protocol.game.ClientboundSetTitlesAnimationPacket;
+import net.minecraft.server.level.ServerPlayer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -38,6 +45,25 @@ public final class SurviveTheNether implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Survive the Nether initialized. Nether spawn routing active.");
+
+		ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
+			ServerPlayer player = handler.getPlayer();
+			if (player.addTag("survive_the_nether:welcomed")) {
+				// Send Title and Subtitle
+				player.connection.send(new ClientboundSetTitlesAnimationPacket(20, 70, 20));
+				player.connection.send(new ClientboundSetTitleTextPacket(
+						Component.translatable("message.survive-the-nether.welcome_title").withStyle(ChatFormatting.DARK_RED, ChatFormatting.BOLD)
+				));
+				player.connection.send(new ClientboundSetSubtitleTextPacket(
+						Component.translatable("message.survive-the-nether.welcome_subtitle").withStyle(ChatFormatting.GOLD)
+				));
+
+				// Send Chat Welcome Message
+				player.sendSystemMessage(Component.translatable("message.survive-the-nether.welcome_chat_1").withStyle(ChatFormatting.RED, ChatFormatting.BOLD));
+				player.sendSystemMessage(Component.translatable("message.survive-the-nether.welcome_chat_2").withStyle(ChatFormatting.GOLD));
+				player.sendSystemMessage(Component.translatable("message.survive-the-nether.welcome_chat_3").withStyle(ChatFormatting.YELLOW));
+			}
+		});
 	}
 
 	public static Identifier id(String path) {
