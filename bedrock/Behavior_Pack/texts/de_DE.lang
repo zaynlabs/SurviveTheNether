@@ -1,0 +1,10 @@
+pack.name=Survive the Nether
+pack.description=Starte im Crimson Forest im Nether und grinde deinen Weg zurück in die Oberwelt.
+message.survive-the-nether.welcome_title=§4§lWIR SIND IM SCHLACHTFELD GESPAWNT§r
+message.survive-the-nether.welcome_subtitle=§6Kein Gras in Sicht. Lock in und entkomme!§r
+message.survive-the-nether.welcome_chat_1=§c§l>> Bro ist wirklich im Nether aufgewacht!§r
+message.survive-the-nether.welcome_chat_2=§6Keine Oberwelt, kein Bett.§r
+message.survive-the-nether.welcome_chat_3=§e[Tipp] Schlage Crimson Stämme für Holz, baue Schwarzstein ab, trage Goldstiefel und handle mit Piglins, um zu entkommen.§r
+message.survive-the-nether.returned_to_trenches=§cBro wurde direkt zurück geschickt.§r
+message.survive-the-nether.escaped_overworld=§a%s hat endlich Gras berührt! (+1.000.000 Aura)§r
+message.survive-the-nether.anchor_depleted=§cDeinem Anker ist der Saft ausgegangen! Zurück zum Hauptspawn geschickt.§r

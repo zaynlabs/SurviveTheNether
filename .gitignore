@@ -39,7 +39,13 @@ replay_*.log
 *.hprof
 *.jfr
 
+# scripts and builds
+sync_to_bedrock.py
+dist/
+
 # notes and documents
 TODO.md
 CONCEPT.md
 AGENTS.md
+BEDROCK ADDON.md
+BEDROCK TODO.md

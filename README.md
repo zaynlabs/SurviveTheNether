@@ -2,6 +2,8 @@
 
 **Survive the Nether** flips Minecraft survival upside down: you wake up in a **Crimson Forest** and your only mission is to lock in, finesse the Piglins, survive the chaotic trenches, build a portal, and **touch grass in the Overworld**!
 
+Available for both **Java Edition (Fabric)** and **Bedrock Edition (.mcaddon)**!
+
 ---
 
 ## ✨ What Does This Mod Do?
@@ -43,7 +45,14 @@
 
 ## 📥 Installation
 
+### ☕ Java Edition (Fabric)
 1. Download and install **[Fabric Loader](https://fabricmc.net/)**.
 2. Drop the **Survive the Nether** `.jar` into your `.minecraft/mods` folder.
 3. Make sure **Fabric API** is also in your mods folder.
-4. Launch the game, create a world, and survive the grind!
+4. Launch the game, create a world, and survive!
+
+### 📱 Bedrock Edition (.mcaddon)
+1. Download `Survive_the_Nether.mcaddon`.
+2. Double-click or tap the file to open it in **Minecraft Bedrock Edition**.
+3. Activate the Behavior Pack and Resource Pack when creating your world.
+4. Jump into the Nether and lock in!

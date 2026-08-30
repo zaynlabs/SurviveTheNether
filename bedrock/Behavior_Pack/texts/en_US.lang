@@ -1,0 +1,10 @@
+pack.name=Survive the Nether
+pack.description=Start in a Nether Crimson Forest and survive your way back to the Overworld.
+message.survive-the-nether.welcome_title=§4§lWE SPAWNED IN THE TRENCHES§r
+message.survive-the-nether.welcome_subtitle=§6No grass in sight. Lock in and escape!§r
+message.survive-the-nether.welcome_chat_1=§c§l>> Bro really woke up in the Nether!§r
+message.survive-the-nether.welcome_chat_2=§6No Overworld, no bed.§r
+message.survive-the-nether.welcome_chat_3=§e[Tip] Punch crimson trees for wood, mine blackstone, wear gold boots and barter with Piglins to escape.§r
+message.survive-the-nether.returned_to_trenches=§cBro got sent right back to the trenches.§r
+message.survive-the-nether.escaped_overworld=§a%s finally touched grass! (+1,000,000 aura)§r
+message.survive-the-nether.anchor_depleted=§cYour anchor ran out of juice! Sent back to the main spawn.§r
