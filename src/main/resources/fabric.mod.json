@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "survive-the-nether",
+	"version": "${version}",
+	"name": "Survive the Nether",
+	"description": "Start in a Nether Crimson Forest and survive your way back to the Overworld.",
+	"authors": [
+		"ZaynLabs"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/survive-the-nether/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"zaynlabs.survivethenether.SurviveTheNether"
+		],
+		"client": [
+			"zaynlabs.survivethenether.client.SurviveTheNetherClient"
+		],
+		"fabric-datagen": [
+			"zaynlabs.survivethenether.client.SurviveTheNetherDataGenerator"
+		]
+	},
+	"mixins": [
+		"survive-the-nether.mixins.json",
+		{
+			"config": "survive-the-nether.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
